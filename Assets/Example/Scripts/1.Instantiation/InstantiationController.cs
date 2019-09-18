@@ -8,6 +8,7 @@ public class InstantiationController : MonoBehaviour
 	private void Update()
 	{
 		//Get the mouse position so we can instantiate our prefabs there.
+		//This works by converting the position of the mouse on the screen to a position in the scene.
 		Vector3 position = Cam.ScreenToWorldPoint(Input.mousePosition);
 		position.z = 0f; //Set z position to 0.
 
